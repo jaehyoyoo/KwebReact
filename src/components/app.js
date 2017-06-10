@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Namecard from './namecard.js';
+//import Like from './Like.js';
 
 class App extends React.Component {
 	constructor(props){
@@ -21,12 +22,82 @@ class App extends React.Component {
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노3", student_num : "2013410019", birthday : "960609",
 				study : "kweb.js", state : "정회원", status : "회장", display : true, 
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노4", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노5", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "부회장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노6", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노7", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "회장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노8", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "총무부장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노9", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "홍보부장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노10", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노11", student_num : "2015410019", birthday : "960323",
+				study : "React.js", state : "준회원", status : "", display : true,
+				like : 3, out : 10, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노12", student_num : "2045410019", birthday : "960123",
+				study : "d3.js", state : "휴회원", status : "", display : true,
+				like : 2, out : 14, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노13", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "회장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노14", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노15", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "부회장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노16", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노17", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "회장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노18", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "총무부장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노19", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "홍보부장", display : true,
+				like : 4, out : 2, birth_state : "#FFFFFF"},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노20", student_num : "2013410019", birthday : "961123",
+				study : "kweb.js", state : "정회원", status : "", display : true,
 				like : 4, out : 2, birth_state : "#FFFFFF"}
-			]
+			],
+			page : 1
 		};
 		// 함수선언 : this.함수이름 = this.함수.bind(this) 하고 아래에서 내용 선언
 		this.searchClicked = this.searchClicked.bind(this);
 		this.user_sort = this.user_sort.bind(this);
+		this.pagebuttonClicked = this.pagebuttonClicked.bind(this);
 	}
 	searchClicked(){
 		var str = $('#namecard_search').val();
@@ -47,9 +118,11 @@ class App extends React.Component {
 		}
 		this.setState({
 			search : str,
-			users : test_users
+			users : test_users,
+			page : 1
 		});
 	}
+
 	user_sort(num){
 		var test_user = this.state.users;
 		switch (num){
@@ -120,9 +193,9 @@ class App extends React.Component {
 				});
 
 				this.setState({
-					users : test_user
+					users : test_user,
+					page : 1
 				});
-
 				break;				
 			case 3 :
 				console.log("like top10 selected");
@@ -142,7 +215,8 @@ class App extends React.Component {
 					test_user[i].birth_state = "#FFFFFF";
 				}
 				this.setState({
-					users : test_user
+					users : test_user,
+					page : 1
 				});
 				break;
 			case 4 :
@@ -163,9 +237,21 @@ class App extends React.Component {
 				alert ("Error!!");
 		}
 	}
+	pagebuttonClicked(prevornext){
+		if(prevornext == -1){
+			this.setState({
+				page: this.state.page - 1
+			});
+		} else if(prevornext == 1){
+			this.setState({
+				page: this.state.page + 1
+			});
+		}
+	}
 	render(){
 		return (
-			<div className="yjh_center_div"> 
+			<div className="yjh_center_div">
+				{/*<Like />*/}
 				<div>
 					<input id="namecard_search" type="text" placeholder="검색어를 입력하세요." />
 					<input onClick={this.searchClicked} type="button" id="namecard_search_btn" value="검색" />
@@ -177,13 +263,19 @@ class App extends React.Component {
 					<input onClick={this.user_sort.bind(this,3)} type="button" value="좋아요 Top10" />
 					<input onClick={this.user_sort.bind(this,4)} type="button" value="현 임원진" />
 				</div>
-				{
+				{	
 					this.state.users.map((user, i) => {
-						return (
-							<Namecard search={this.state.search} info={user} key={i} />
-							);
+							if(((this.state.page-1)*10<=i) && (i<(this.state.page*10))){
+								return (
+									<Namecard search={this.state.search} info={user} key={i} />
+								);
+							}
 					})
 				}
+				<div className="namecard_pagebutton_box">
+					<input onClick={this.pagebuttonClicked.bind(this,-1)} type="button" value="prev"/>
+					<input onClick={this.pagebuttonClicked.bind(this,1)} type="button" value="next"/>
+				</div>
 			</div>
 		);
 	}
