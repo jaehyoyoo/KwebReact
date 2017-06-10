@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Namecard from './namecard.js';
+import Like from './Like.js';
 
 class App extends React.Component {
 	constructor(props){
@@ -12,15 +13,24 @@ class App extends React.Component {
 					  // 9 : Like 갯수, 10: 아웃카운트
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노", student_num : "2015410019", birthday : "960323",
+<<<<<<< HEAD
 				study : "React.js", state : "준회원", status : "", display : true,
 				like : 3, out : 10},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노2", student_num : "2045410019", birthday : "960123",
 				study : "d3.js", state : "휴회원", status : "", display : true,
+=======
+				study : "React.js", state : "준회원", status : "준회원", display : true,
+				like : 3, out : 10},
+				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
+				name : "보노보노2", student_num : "2045410019", birthday : "960123",
+				study : "d3.js", state : "휴회원", status : "정회원", display : true,
+>>>>>>> 8e8a0c5837ceddd985f6138925c0e57a844daf30
 				like : 2, out : 14},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노3", student_num : "2013410019", birthday : "961123",
 				study : "kweb.js", state : "정회원", status : "회장", display : true,
+<<<<<<< HEAD
 				like : 4, out : 2},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노4", student_num : "2013410019", birthday : "961123",
@@ -89,6 +99,8 @@ class App extends React.Component {
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노20", student_num : "2013410019", birthday : "961123",
 				study : "kweb.js", state : "정회원", status : "", display : true,
+=======
+>>>>>>> 8e8a0c5837ceddd985f6138925c0e57a844daf30
 				like : 4, out : 2}
 			],
 			page : 1
@@ -183,6 +195,7 @@ class App extends React.Component {
 	render(){
 		return (
 			<div className="yjh_center_div">
+				<Like />
 				<div>
 					<input id="namecard_search" type="text" placeholder="검색어를 입력하세요." />
 					<input onClick={this.searchClicked} type="button" id="namecard_search_btn" value="검색" />
