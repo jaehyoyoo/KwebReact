@@ -8,20 +8,20 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 			search : "",
-			users : [ // 0 : 사진, 1 : 좋아요 한 사람들, 2 : 이름, 3 : 학번, 4 : 생일, 
+			users : [ // 0 : 사진, 1 : 좋아요 한 사람들, 2 : 이름, 3 : 학번, 4 : 생일,
 					  // 5 : 정스, 6 : 휴학여부 및 준정여부, 7 : 직위, 8 : false면 display:none,
 					  // 9 : Like 갯수, 10: 아웃카운트
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노", student_num : "2015410019", birthday : "960623",
-				study : "React.js", state : "준회원", status : "", display : true, 
+				study : "React.js", state : "준회원", status : "", display : true,
 				like : 3, out : 10, birth_state : "#FFFFFF"},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노2", student_num : "2045410019", birthday : "960630",
-				study : "d3.js", state : "휴회원", status : "", display : true, 
+				study : "d3.js", state : "휴회원", status : "", display : true,
 				like : 2, out : 14, birth_state : "#FFFFFF"},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노3", student_num : "2013410019", birthday : "960609",
-				study : "kweb.js", state : "정회원", status : "회장", display : true, 
+				study : "kweb.js", state : "정회원", status : "회장", display : true,
 				like : 4, out : 2, birth_state : "#FFFFFF"},
 				{image : "/image/bonobono.jpg", like_people : "윤현식, 유재효, 강명훈, 이소라 님",
 				name : "보노보노4", student_num : "2013410019", birthday : "961123",
@@ -106,7 +106,7 @@ class App extends React.Component {
 		var test_users = this.state.users;
 		for(var i = 0; i < test_users.length; i++){
 			var test = false;
-			
+
 			test = (test || re.test(test_users[i].name));
 			test = (test || re.test(test_users[i].student_num));
 			test = (test || re.test(test_users[i].study));
@@ -125,6 +125,10 @@ class App extends React.Component {
 
 	user_sort(num){
 		var test_user = this.state.users;
+		for(var i = 0; i < test_user.length; ++i){
+			test_user[i].display = true;
+			test_user[i].birth_state = "#FFFFFF";
+		}
 		switch (num){
 			case 0 :
 				//전체 보기
@@ -137,7 +141,7 @@ class App extends React.Component {
 					users : test_user
 				});
 				break;
-			case 1 : 
+			case 1 :
 				console.log("birthday selected");
 				// 월을 누적일수로 변환하기 위해 사용.
 				var today = new Date();
@@ -180,7 +184,7 @@ class App extends React.Component {
 					users : test_user
 				});
 				break;
-			case 2 : 
+			case 2 :
 				// outcount 순으로 정렬
 				console.log("out count selected");
 
@@ -196,7 +200,7 @@ class App extends React.Component {
 					users : test_user,
 					page : 1
 				});
-				break;				
+				break;
 			case 3 :
 				console.log("like top10 selected");
 				test_user.sort(function(a,b) {
@@ -263,7 +267,7 @@ class App extends React.Component {
 					<input onClick={this.user_sort.bind(this,3)} type="button" value="좋아요 Top10" />
 					<input onClick={this.user_sort.bind(this,4)} type="button" value="현 임원진" />
 				</div>
-				{	
+				{
 					this.state.users.map((user, i) => {
 							if(((this.state.page-1)*10<=i) && (i<(this.state.page*10))){
 								return (

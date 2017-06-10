@@ -10,7 +10,7 @@ class Namecard extends React.Component {
 		// 함수선언 : this.함수이름 = this.함수.bind(this) 하고 아래에서 내용 선언
 	}
 	// this.props.info.info Indexing
-	// 0 : 사진, 1 : 좋아요 한 사람들, 2 : 이름, 3 : 학번, 4 : 생일, 
+	// 0 : 사진, 1 : 좋아요 한 사람들, 2 : 이름, 3 : 학번, 4 : 생일,
 	// 5: 정스, 6 : 휴학여부 및 준정여부, 7 : 직위, 8 : display none의 여부
 	render(){
 		return (
@@ -23,7 +23,7 @@ class Namecard extends React.Component {
 								<img className="namecard_image" src={this.props.info.image} />
 							</div>
 							<div>
-								<a href="javascript:void(0);">+좋아요</a>
+								<a href="javascript:void(0);">+좋아요({this.props.info.like})</a>
 							</div>
 						</th>
 						<td className="namecard_td">
@@ -33,7 +33,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											학번 : 
+											학번 :
 											</th>
 											<td>
 											{this.props.info.student_num}
@@ -45,7 +45,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											생일 : 
+											생일 :
 											</th>
 											<td>
 											{this.props.info.birthday}
@@ -57,7 +57,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											정회원 스터디 : 
+											정회원 스터디 :
 											</th>
 											<td>
 											{this.props.info.study}
@@ -73,6 +73,7 @@ class Namecard extends React.Component {
 											</th>
 											<td>
 											{this.props.info.state}
+											<span style={{color:"red"}}>(Out:{this.props.info.out})</span>
 											</td>
 										</tr>
 									</tbody>
@@ -82,7 +83,7 @@ class Namecard extends React.Component {
 										<tbody>
 											<tr>
 												<th>
-												직위 : 
+												직위 :
 												</th>
 												<td>
 												{this.props.info.status}
