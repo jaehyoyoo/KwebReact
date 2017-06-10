@@ -12,28 +12,34 @@ th{
 .namecard_outer_box{
 	border: 1px solid black;
 	margin: 0 auto;
-	margin-top : 10px;
+	margin-top : 5px;
 	width: 600px;
-	height: 200px;
+	height: 220px;
 	padding: 0;
+	background-color: #330000;
+	color: #FFFF99;
+	font-family: '함초롬돋움';
 }
 .namecard_td{
-	width:400px;
+	font-size: 15px;
 }
 .namecard_name{
-	border: 1px solid black;
+	border: 1px '#FFFF99';
 	margin: 0 auto;
-	margin-top : 10px;
+	margin-top : 3px;
 	margin-bottom: 10px;
 	width:200px;
 	height: 20px;
-	text-align: center;
+	text-align: left;
+	font-size: 20px;
+
 }
 
 .namecard_image{
 	margin-top:7.5px;
-	margin-left:20px;
+	margin-left:30px;
 	margin-right: 20px;
+	margin-bottom: 5px;
 	vertical-align: center;
 	width:160px;
 	height: 160px;

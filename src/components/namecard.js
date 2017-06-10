@@ -1,5 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactCSS from 'reactcss'
+
+
+
 
 class Namecard extends React.Component {
 	constructor(props){
@@ -17,11 +21,11 @@ class Namecard extends React.Component {
 						<tr>
 						<th>
 							<div>
-								<img className="namecard_image" src="/image/bonobono.jpg" />
+								<img className="namecard_image" src="/image/profile.jpg"></img>
 							</div>
-							<div>
-								<a href="javascript:void(0);">+좋아요</a>
-							</div>
+			          		<div>
+					            <img src = "/image/like.png" height = "30" width="30"></img> 
+			        		</div>
 						</th>
 						<td className="namecard_td">
 							<div className="namecard_name">보노보노</div>
@@ -30,7 +34,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											학번 : 
+											학번 &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</th>
 											<td>
 											2015410019
@@ -42,10 +46,10 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											생일 : 
+											생일 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</th>
 											<td>
-											12월 23일
+											12월 23일	
 											</td>
 										</tr>
 									</tbody>
@@ -54,7 +58,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											정회원 스터디 : 
+											정회원 스터디 &nbsp;&nbsp;
 											</th>
 											<td>
 											React.js
@@ -66,7 +70,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											회원상태 :
+											회원상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</th>
 											<td>
 											휴회원
@@ -78,7 +82,7 @@ class Namecard extends React.Component {
 									<tbody>
 										<tr>
 											<th>
-											직위 : 
+											직위 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</th>
 											<td>
 											일개 정회원
