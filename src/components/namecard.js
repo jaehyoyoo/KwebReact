@@ -14,7 +14,7 @@ class Namecard extends React.Component {
 	// 5: 정스, 6 : 휴학여부 및 준정여부, 7 : 직위, 8 : display none의 여부
 	render(){
 		return (
-			<div style={{display: this.props.info.display ? 'block' : 'none' }} className= "namecard_outer_box">
+			<div style={{display: this.props.info.display ? 'block' : 'none', backgroundColor : this.props.info.birth_state}} className= "namecard_outer_box">
 				<table>
 					<tbody>
 						<tr>
@@ -77,18 +77,20 @@ class Namecard extends React.Component {
 										</tr>
 									</tbody>
 								</table>
-								<table>
-									<tbody>
-										<tr>
-											<th>
-											직위 : 
-											</th>
-											<td>
-											{this.props.info.status}
-											</td>
-										</tr>
-									</tbody>
-								</table>
+								<div style={{visibility: (this.props.info.status.length != 0) ? 'visible' : 'hidden' }}>
+									<table>
+										<tbody>
+											<tr>
+												<th>
+												직위 : 
+												</th>
+												<td>
+												{this.props.info.status}
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</td>
 						</tr>
