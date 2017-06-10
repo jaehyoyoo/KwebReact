@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Namecard from './namecard.js';
 class App extends React.Component {
 	constructor(props){
 		super(props);
@@ -11,7 +11,9 @@ class App extends React.Component {
 	}
 	render(){
 		return (
-			<div> Hello world! </div>
+			<div>
+				<Namecard />
+			</div>
 		);
 	}
 }

@@ -1,0 +1,40 @@
+/*
+div{
+	border : 1px solid black;
+}
+td{
+	vertical-align: 0;
+	border: 1px solid black;
+}
+th{
+	border: 1px solid black;
+}*/
+.namecard_outer_box{
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top : 10px;
+	width: 600px;
+	height: 200px;
+	padding: 0;
+}
+.namecard_td{
+	width:400px;
+}
+.namecard_name{
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top : 10px;
+	margin-bottom: 10px;
+	width:200px;
+	height: 20px;
+	text-align: center;
+}
+
+.namecard_image{
+	margin-top:7.5px;
+	margin-left:20px;
+	margin-right: 20px;
+	vertical-align: center;
+	width:160px;
+	height: 160px;
+}
